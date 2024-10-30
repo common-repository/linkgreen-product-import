@@ -1,0 +1,94 @@
+#linkgreen-retailers-map {
+    height: 80vh;
+}
+
+#map, 
+#linkgreen-retailers-map > .et_pb_code_inner {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+#lgpi-postal-container {
+    position: absolute;
+    top: 10px;
+    left: 35%;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+#results-notification-container {
+    display: none;
+}
+
+.retail-location-result {
+  cursor: pointer;
+  /*list-style: none;*/
+}
+
+.retail-location-result > div {
+    padding: 6px;
+    padding-left: 8px;
+}
+
+.retail-location-result-links {
+    font-size: small;
+}
+
+ul#results-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* ul#results-list > li:nth-child(even) { background: #FEF3FF; } */
+ul#results-list > li:nth-child(odd) { 
+    background: #ECF0FF; 
+    border-radius: 10px;
+}
+
+
+@media all and (max-width: 980px) {
+  /*** wrap row in a flex box ***/
+  .custom_row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    flex-wrap: wrap;
+  }
+
+  /*** custom classes that will designate the order of columns in the flex box row ***/
+  .first-on-mobile {
+    -webkit-order: 1;
+    order: 1;
+  }
+
+  .second-on-mobile {
+    -webkit-order: 2;
+    order: 2;
+  }
+
+  .third-on-mobile {
+    -webkit-order: 3;
+    order: 3;
+  }
+
+  .fourth-on-mobile {
+    -webkit-order: 4;
+    order: 4;
+  }
+
+  /*** add margin to last column ***/
+  .custom_row:last-child .et_pb_column:last-child {
+    margin-bottom: 30px;
+  }
+}

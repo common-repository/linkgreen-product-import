@@ -1,0 +1,67 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ #api_token {
+    width: 25em;
+ }
+
+ #debug-options {
+    display: inline-block; 
+    vertical-align: top;
+ }
+
+ #debug-log {
+    overflow:auto; 
+    width: 90%; 
+    height: 600px; 
+    border: 1px solid black; 
+    display: inline-block; 
+    vertical-align: top; 
+    padding: 1em;
+    margin: 1em;
+    background: wheat;
+ }
+
+ #debug-log pre {
+    margin: 0;
+ }
+
+ .lg-tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+.lg-tooltip .lg-tooltiptext {
+    visibility: hidden;
+    width: 240px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -120px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.lg-tooltip .lg-tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.lg-tooltip:hover .lg-tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
